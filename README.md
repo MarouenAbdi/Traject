@@ -1,6 +1,14 @@
 # Traject
 
-![GitHub Logo](/Homepage.jpg)
+Traject is a project management web application that helps users managing projects, users, events and bugs.
+
+![GitHub Logo](/traject.png)
+
+# Technologies
+
+To be able to implement the proposed solution, the following frameworks were used.
+
+![GitHub Logo](/tech.png)
 
 # How to run
 
@@ -23,3 +31,7 @@
 ```bash
     npm start
 ```
+
+# Screenshot
+
+![GitHub Logo](/Homepage.jpg)
