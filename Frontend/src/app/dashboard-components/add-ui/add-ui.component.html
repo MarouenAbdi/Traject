@@ -1,0 +1,65 @@
+<div id="message" class="alert alert-success">
+  <strong>{{action}}</strong> {{details}}
+</div>
+
+<div class="flex-parent">
+  <form>
+    
+    <h2>Add New Interface</h2>
+          <br>
+
+      <div class="flex-item">
+
+        <div class="form-group">
+          <label for="projectname">Id</label>
+          <input type="text" id="id" name="id" [(ngModel)]="id" class="form-control csp" placeholder="Enter your sprint number" [ngModelOptions]="{standalone:true}">
+      </div>
+          
+        <div class="form-group">
+            <label for="projectname">Type</label>
+            <input type="text" id="type" name="type" [(ngModel)]="type" class="form-control csp" placeholder="Enter your sprint number" [ngModelOptions]="{standalone:true}">
+        </div>
+        <div class="form-group">
+            <label for="projectname">Sense</label>
+            <input type="text" id="sense" name="sense" [(ngModel)]="sense" class="form-control csp" placeholder="Enter your sprint number" [ngModelOptions]="{standalone:true}">
+        </div>
+        <div class="form-group">
+          <label for="projectname">Source System</label>
+          <input type="text" id="sourceSys" name="sourceSys" [(ngModel)]="sourceSys" class="form-control csp" placeholder="Enter your sprint number" [ngModelOptions]="{standalone:true}">
+      </div>
+      <div class="form-group">
+        <label for="projectname">Target System</label>
+        <input type="text" id="targetSys" name="targetSys" [(ngModel)]="targetSys" class="form-control csp" placeholder="Enter your sprint number" [ngModelOptions]="{standalone:true}">
+    </div>
+        <div class="form-group">
+            <label for="start">Date of Commencement</label>
+          <input type="text" id="startDate" name="startDate" [(ngModel)]="startDate" class="form-control csp" placeholder="Please enter date in this format YYYY-MM-DD" [ngModelOptions]="{standalone:true}">
+        </div>
+        <div class="form-group">
+            <label for="endDate">Deadline</label>
+            <input type="text" id="endDate" name="endDate" [(ngModel)]="endDate" class="form-control csp" placeholder="Please enter date in this format YYYY-MM-DD" [ngModelOptions]="{standalone:true}">
+        </div>
+        <div class="form-group">
+            <label for="estimatedDate">Estimated Duration</label>
+          <input type="text" id="estimatedDate" name="estimatedDate" [(ngModel)]="estimatedDate" class="form-control csp" placeholder="Day/man" [ngModelOptions]="{standalone:true}">
+        </div>
+        <div class="form-group">
+            <label for="startDate">Actual Duration</label>
+          <input type="text" id="actualDate" name="actualDate" [(ngModel)]="actualDate" class="form-control csp" placeholder="Day/man" [ngModelOptions]="{standalone:true}">
+        </div>
+
+        <div class="form-group">
+          <label for="teamleader">Sprint</label><br>
+          <input type="text" id="sprintid" name="sprintid" [(ngModel)]="sprintid" class="form-control csp" [ngModelOptions]="{standalone:true}" disabled="true">
+      </div>
+
+
+        <br>
+        <div class="but">
+        <button type="button" class="btn btn-primary" (click)='validateSignUp()' > Add Interface </button>
+        </div>
+      </div>
+    
+  
+  </form>
+</div>

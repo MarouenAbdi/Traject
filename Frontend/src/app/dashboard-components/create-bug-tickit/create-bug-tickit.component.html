@@ -1,0 +1,41 @@
+<div id="message" class="alert alert-success" role="alert">
+  <strong>{{action}}</strong> {{details}}
+</div>
+
+<div class="flex-parent">
+	<form>
+		
+			<h2>Create Bug Report</h2>
+				<br>
+				
+			<div class="flex-item">
+
+			    <div class="form-group">
+				    <label for="title">Title:</label>
+				    <input type="text" id="tname" name="tname" [(ngModel)]="tname" class="form-control csp" placeholder="Bug Title" [ngModelOptions]="{standalone:true}">
+				</div>
+				<div class="form-group">
+				    <label for="bugdescription">Bug Description:</label>
+				    <input type="text" id="description" name="description" [(ngModel)]="description" class="form-control csp" placeholder="Write you issue's details" [ngModelOptions]="{standalone:true}">
+				</div>
+			    <div class="form-group">
+				    <label for="type">Type:</label>
+				    <input type="text" id="prior" name="prior" [(ngModel)]="prior" class="form-control csp" placeholder="High, medium, low" [ngModelOptions]="{standalone:true}">
+				</div>
+				<div class="form-group">
+					<label for="project">Project:</label> <br>
+					<select id="projectid" [(ngModel)]="projectid" (change)="prjcheck($event)" [ngModelOptions]="{standalone:true}">
+					<option *ngFor="let item of testing" [value]="item.Id" >{{item.name}}<option>
+					</select>
+				</div>
+				
+			
+		
+
+
+				<br>
+				<button type="button" class="btn btn-primary" (click)='validateSignUp()'> Create Bug </button>
+			</div>
+
+	</form>
+</div>

@@ -1,0 +1,26 @@
+<nav class="navbar fixed-top justify-content-between">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/logo_tra256.png" width="40" height="40" class="d-inline-block align-top" alt="traject-logo">
+  </a>
+
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="../../assets/avatar.png" width="30" height="30" class="d-inline-block align-top img-circle" alt="profile-logo">
+            {{user}}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="right: 0; left: auto;">
+          <a class="dropdown-item" routerLink="/cpanel/profile" routerLinkActive="active"><i class="material-icons">person</i>  View Profile</a>
+          <a class="dropdown-item"  routerLink="/cpanel/accountsettings" routerLinkActive="active"><i class="material-icons">settings</i>  Change Profile Settings</a>
+          <a class="dropdown-item" (click)='logout()' ><i class="material-icons">power_settings_new</i>  Sign Out</a>
+        </div>
+      </li>
+</nav>
+
+
+	    <div class="col-3 nav-panel"><hamburger></hamburger></div>
+	    <div class="route-content"><router-outlet></router-outlet></div>
+  	
+  
+
+

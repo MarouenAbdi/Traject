@@ -1,0 +1,55 @@
+.material-icons{
+	font-size: 1rem;
+}
+
+
+.hamburger-parent{
+	padding:0px;
+}
+
+
+.navigation{
+	padding-top: 50px;
+	position: relative;
+}
+
+.navigation li {
+	list-style: none;
+}
+
+.navigation a {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: .2em;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0 10px 20px;
+	border-left: 3px solid #ffffff;
+	line-height: auto;
+	
+	
+}
+
+.navigation a:hover {
+	background-color: #1976D2;
+	border-left: 3px solid #1566b7;
+}
+
+.navigation ul ul {
+	position: absolute;
+	visibility: hidden;
+}
+
+.navigation ul li.tap ul {
+	display: block;
+}
+
+.navigation ul ul a:before {
+	margin-right: 20px;
+}
+
+.navigation ul li:hover > ul {
+	position: relative;
+	visibility: visible;
+}

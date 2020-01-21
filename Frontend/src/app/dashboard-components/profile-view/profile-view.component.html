@@ -1,0 +1,38 @@
+<div class="request-body">
+<h1 class="display-3"> My Profile </h1>
+
+	<div id="requ" class="all-requests">
+		<ul class="team">
+			<li *ngFor="let item of testarr"> 
+
+
+				<div id="notify_{{item.id}}" class="boxx" style="width: 50rem;">
+				
+				  <div class="card-body">
+				    <h4 class="card-title"><img src="../../assets/avatar.png" width="80" height="80" class="d-inline-block align-top img-circle" alt="bluebox-logo">  {{item.firstName}}</h4>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				  	
+				    <li class="list-group-item"><strong class="intext">Bio Info: </strong>
+						<br><br>
+				    	<p><em>Name: </em>{{item.firstName}}</p>
+				    	<p><em>Email: </em>{{item.email}}</p>
+						<p><em>User Type: </em>{{item.userType}}</p>
+						<p><em>Date Of Joining: </em>{{item.dob}}</p>
+				    </li>
+				  </ul>
+				</div>
+
+				<br><br>
+
+
+
+			</li>
+		</ul>
+
+
+
+
+
+	</div>
+</div>

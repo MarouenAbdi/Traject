@@ -1,0 +1,34 @@
+<div id="message" class="alert" role="alert alert-success">
+  <strong>{{action}}</strong> {{details}}
+</div>
+
+<div class="flex-parent">
+	<form>
+		
+		
+			<h2>Create New Team</h2>
+				<br>
+
+			<div class="flex-item">
+
+				<div class="form-group">
+				    <label for="tn">Team Name</label>
+				    <input type="text" id="tn" name="tn" [(ngModel)]="tn" class="form-control csp" placeholder="Please enter the team name" [ngModelOptions]="{standalone:true}">
+				</div>
+			    <div class="form-group">
+				    <label for="project">Project Id</label> <br>
+					<select id="projectid" [(ngModel)]="projectid" (change)="prjcheck($event)" [ngModelOptions]="{standalone:true}">
+						<option *ngFor="let item of testing" [value]="item.Id" >{{item.name}}<option>
+					</select>
+				</div>
+				<div class="form-group">
+				    <label for="doj">Date of Creation</label>
+				    <input type="text" id="doj" name="doj" [(ngModel)]="doj" class="form-control csp" placeholder="Please enter date in this format YYYY-MM-DD" disabled="true" [ngModelOptions]="{standalone:true}">
+				</div>
+				<br>
+				<div class="but">
+				<button type="button" class="btn btn-primary" (click)='validateSignUp()' > Create Team </button>
+				</div>
+			</div>
+	</form>
+</div>

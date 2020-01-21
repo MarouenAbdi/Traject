@@ -1,0 +1,39 @@
+<div id="message" class="alert alert-success" role="alert">
+  <strong>{{action}}</strong> {{details}}
+</div>
+
+<div class="flex-parent">
+	<form>
+	
+		<h2>Create An Event</h2>
+				<br>
+							
+			<div class="flex-item">
+
+				<div class="form-group">
+				    <label for="etname">Event Name:</label>
+				    <input type="text" id="tname" name="tname" [(ngModel)]="tname" class="form-control csp" placeholder="Title" [ngModelOptions]="{standalone:true}">
+				</div>
+				<div class="form-group">
+				    <label for="edescription">Event Description:</label>
+				    <input type="text" id="description" name="description" [(ngModel)]="description" class="form-control csp" placeholder="Versions, Builds, Details" [ngModelOptions]="{standalone:true}">
+				</div>
+				<div class="form-group">
+				    <label for="eshare">Share To:</label>
+				    <input type="email" id="share" name="share" [(ngModel)]="share" class="form-control csp" placeholder="Receiver" [ngModelOptions]="{standalone:true}">
+				</div>
+				<div class="form-group">
+				    <label for="edeadline">For : </label>
+					<input type="text" id="deadline" name="deadline" [(ngModel)]="deadline" class="form-control csp" placeholder="Please enter date in this format YYYY-MM-DD" [ngModelOptions]="{standalone:true}">
+				</div>
+		
+
+		
+
+				<br>
+				<button type="button" class="btn btn-primary" (click)='validateSignUp()' > Create An Event </button>
+			
+		</div>
+
+	</form>
+</div>

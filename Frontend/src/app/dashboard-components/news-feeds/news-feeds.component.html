@@ -1,0 +1,34 @@
+<div class="request-body">
+<h1 class="display-3"> Notifications </h1>
+
+<p id="message" class="mess"> You do not have any notifications </p> 
+	<div id="requ" class="all-requests">
+		<ul class="team">
+			<li *ngFor="let item of testarr"> 
+
+
+				<div id="notify_{{item.Id}}" class="boxx" style="width: 50rem;">
+				  <div class="card-body">
+				    <h4 class="card-title">Notification</h4>
+				    <p class="card-text">Send at  {{item.sTimestamp}}</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				  	<li class="list-group-item"><strong>Title : {{item.title}}</strong></li>
+				    <li class="list-group-item"><strong>Body : </strong>{{item.body}}</li>
+
+				  </ul>
+				</div>
+
+				<br><br>
+
+
+
+			</li>
+		</ul>
+
+
+
+
+
+	</div>
+</div>

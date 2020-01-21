@@ -1,0 +1,58 @@
+<div id="message" class="alert alert-success">
+		<strong>{{action}}</strong> {{details}}
+</div>
+<div class="flex-parent">
+	<form>
+
+			<h2>Add New User</h2>
+			<br>
+			
+			<div class="flex-item">
+
+
+				<div class="form-group">
+					<label for="InputEmail">User Id</label>
+					<input type="text" id="userid" name="userid" [(ngModel)]="userid" class="form-control csp" aria-describedby="useridHelp" placeholder="User Id" [ngModelOptions]="{standalone:true}">
+				</div>
+
+				<div class="form-group">
+						<label for="firstName">Name</label>
+						<input type="text" id="firstname" name="firstname" [(ngModel)]="firstname" class="form-control csp" placeholder="First name & last name" [ngModelOptions]="{standalone:true}">
+					</div>
+
+				<div class="form-group">
+					<label for="InputEmail">Email address</label>
+				    <input type="email" id="username" name="username" [(ngModel)]="username" class="form-control csp" aria-describedby="emailHelp" placeholder="Enter email" [ngModelOptions]="{standalone:true}">
+				</div>
+			    <div class="form-group">
+				    <label for="password">Password</label>
+				    <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control csp" placeholder="Password" [ngModelOptions]="{standalone:true}">
+				</div>
+				<div class="form-group">
+				    <label for="confirm">Confirm Password</label>
+				    <input type="password" id="cpassword" name="confirm" [(ngModel)]="confirm" class="form-control csp" placeholder="Confirm Password" [ngModelOptions]="{standalone:true}">
+				</div>
+				<div class="form-group">
+					<label for="type">User Type</label><br>
+					<select id="usertype" [(ngModel)]="usertype" (change)="semm($event)" [ngModelOptions]="{standalone:true}">
+					<option value="Admin">Administration<option>
+					<option value="projectmanager">Project Manager<option>
+					<option value="user">Consultant<option>
+					</select>
+					</div>
+				<div class="form-group">
+				    <label for="dob">Date Of Joining</label>
+				    <input type="text" id="dob" name="dob" [(ngModel)]="dob" class="form-control csp" placeholder="Please enter date in this format YYYY-MM-DD" [ngModelOptions]="{standalone:true}">
+				</div>
+			    <br>
+				<div class="but">
+			  <button type="button" id="signup" class="btn btn-primary" (click)='validateSignUp()' >Create User</button>
+				</div>
+			
+			</div>
+
+		
+
+
+	</form>
+</div>

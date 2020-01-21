@@ -1,0 +1,35 @@
+<div class="team-view">
+	<div class="header"><h1 class="display-3">My Teams</h1></div>
+
+<p id="message" class="mess"> You do not have not joined any team! </p>
+	<div id="cardss" class="card-orient">
+		<ul class="team">
+			<li *ngFor="let item of testarr"> 
+
+
+				<div id="notify_{{item.id}}" class="boxx" style="width: 45rem;">
+				  <div class="card-body">
+				    <h4 class="card-title">Team Name: {{  item.teamName}}</h4>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item"><strong>Project Handle: </strong>{{item.Id}}</li>
+						<li class="list-group-item"><strong>Joined Since: </strong>{{item.creationDate}}</li>
+						<li class="list-group-item"><strong>Project: </strong>{{item.projectId}}</li>
+				    <li class="list-group-item">
+							<div class="but">
+				    	<button type="button" id="membr" class="btn btn-primary btn-lg " (click)="addRequest(item)">Add Team Members</button>
+				    	<button type="button" class="btn btn-primary btn-lg" (click)="quitRequest(item)">Quit Team</button>
+							</div>
+						</li>
+				  </ul>
+				</div>
+
+				<br>
+
+
+
+			</li>
+		</ul>
+	</div>
+
+</div>

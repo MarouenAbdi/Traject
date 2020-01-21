@@ -1,0 +1,45 @@
+<div class="request-body">
+<h1 class="display-3">My Projects</h1>
+
+<p id="message" class="mess"> You do not have any projects!</p> 
+	<div id="requ" class="all-requests">
+		<ul class="team">
+			<li *ngFor="let item of testarr"> 
+
+
+				<div id="notify_{{item.Id}}" class="boxx" style="width: 50rem;">
+				  <div class="card-body">
+				    <h4 class="card-title">{{item.name}}</h4>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				  	<li class="list-group-item"><strong>Id: </strong>{{item.Id}}</li>
+						<li class="list-group-item"><strong>Client: </strong>{{item.client}}</li>
+						<li class="list-group-item"><strong>Location: </strong>{{item.location}}</li>
+				    <li class="list-group-item"><strong>Project Manager: </strong>{{item.projectmanager}}</li>
+				    <li class="list-group-item"><strong>Starting Date: </strong>{{item.startDate}}</li>
+				    <li class="list-group-item"><strong>Ending Date: </strong>{{item.endDate}}</li>
+						<li class="list-group-item"><strong>Estimated Duration: </strong>{{item.estimatedDuration}}</li>
+						<li class="list-group-item"><strong>Actual Duration: </strong>{{item.actualDuration}}</li>
+				    <li class="list-group-item">
+							<div class="but">
+				    	<button type="button" class="btn btn-primary btn-lg" (click)="sprints(item)">Sprints</button>
+				    	<button type="button" class="btn btn-primary btn-lg" (click)="updateRequest(item)">blabla</button>
+						  </div>
+						</li>
+
+				  </ul>
+				</div>
+		
+				<br><br>
+
+
+
+			</li>
+		</ul>
+
+
+
+
+
+	</div>
+</div>
