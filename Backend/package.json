@@ -25,7 +25,7 @@
     "graphql-date": "^1.0.3",
     "graphql-iso-date": "^3.5.0",
     "graphql-relay": "^0.3.6",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "mysql": "^2.14.1",
     "mysql2": "^1.4.0",
     "sequelize": "^4.4.3"
